@@ -34,23 +34,13 @@
                                 </constraints>
                                 <state key="normal" title="Galatasary"/>
                                 <connections>
-                                    <action selector="Answer_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U39-xq-MVp"/>
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VX-OW-LIi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-Yj-7FY">
-                                <rect key="frame" x="205" y="376" width="150" height="30"/>
-                                <state key="normal" title="Besiktas"/>
-                                <connections>
-                                    <action selector="Answer_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJX-03-sfo"/>
-                                    <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5Q-c8-4Of"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwZ-4y-x3P">
                                 <rect key="frame" x="205" y="445" width="150" height="30"/>
                                 <state key="normal" title="Fenerbahce"/>
                                 <connections>
-                                    <action selector="Answer_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XI1-Po-wsR"/>
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jyK-Xx-7fs"/>
                                 </connections>
                             </button>
@@ -64,8 +54,14 @@
                                 <rect key="frame" x="20" y="445" width="150" height="30"/>
                                 <state key="normal" title="Trabzonspor"/>
                                 <connections>
-                                    <action selector="Answer_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPM-mY-POl"/>
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWz-Hp-Zfl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-Yj-7FY">
+                                <rect key="frame" x="205" y="376" width="150" height="30"/>
+                                <state key="normal" title="Besiktas"/>
+                                <connections>
+                                    <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5Q-c8-4Of"/>
                                 </connections>
                             </button>
                         </subviews>
