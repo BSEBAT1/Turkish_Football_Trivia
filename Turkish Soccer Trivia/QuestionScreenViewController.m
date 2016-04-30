@@ -9,6 +9,7 @@
 #import "QuestionScreenViewController.h"
 #import "Question_Class.h"
 @import UIKit;
+#import <QuartzCore/QuartzCore.h>
 
 @interface QuestionScreenViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *Button_1;
@@ -37,6 +38,8 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view.
     Questions_List=[[NSMutableArray alloc]init];
     
