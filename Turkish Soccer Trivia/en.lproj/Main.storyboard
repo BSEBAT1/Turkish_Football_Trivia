@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,9 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hof-gz-dcD">
-                                <rect key="frame" x="20" y="440" width="150" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hof-gz-dcD">
+                                <rect key="frame" x="20" y="440" width="115" height="48"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BhK-Pb-V7w"/>
+                                    <constraint firstAttribute="width" constant="115" id="lRS-ok-Udv"/>
+                                </constraints>
                                 <state key="normal" title="Galatasary">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,10 +34,13 @@
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VX-OW-LIi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9W-iL-lqN">
-                                <rect key="frame" x="20" y="572" width="150" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9W-iL-lqN">
+                                <rect key="frame" x="20" y="572" width="115" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xb0-Ro-SlN"/>
+                                </constraints>
                                 <state key="normal" title="Trabzonspor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,18 +48,8 @@
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWz-Hp-Zfl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-Yj-7FY">
-                                <rect key="frame" x="244" y="440" width="150" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Besiktas">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5Q-c8-4Of"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwZ-4y-x3P">
-                                <rect key="frame" x="244" y="572" width="150" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwZ-4y-x3P">
+                                <rect key="frame" x="279" y="572" width="115" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <state key="normal" title="Fenerbahce">
@@ -61,19 +60,44 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This team won the 1996 Turkish league championship" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-1r-jKm">
-                                <rect key="frame" x="20" y="101" width="374" height="186"/>
+                                <rect key="frame" x="20" y="72" width="374" height="286"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-Yj-7FY">
+                                <rect key="frame" x="279" y="440" width="115" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="ueu-Ui-cMQ"/>
+                                </constraints>
+                                <state key="normal" title="Besiktas">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5Q-c8-4Of"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RBp-1r-jKm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="Szy-co-1Dc"/>
-                            <constraint firstItem="RBp-1r-jKm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UaU-me-Nt2"/>
-                            <constraint firstItem="RBp-1r-jKm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="aDV-jx-COZ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RBp-1r-jKm" secondAttribute="bottom" constant="449" id="dWv-6I-Tnd"/>
-                            <constraint firstItem="RBp-1r-jKm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hr0-nI-DFv"/>
+                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="RBp-1r-jKm" secondAttribute="bottom" constant="82" id="2vy-2D-gPL"/>
+                            <constraint firstItem="UwZ-4y-x3P" firstAttribute="baseline" secondItem="Q9W-iL-lqN" secondAttribute="firstBaseline" id="5Uf-el-gYa"/>
+                            <constraint firstItem="UwZ-4y-x3P" firstAttribute="top" secondItem="V5X-Yj-7FY" secondAttribute="bottom" constant="82" id="8kh-LF-lJI"/>
+                            <constraint firstItem="RBp-1r-jKm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Eoc-ES-eMM"/>
+                            <constraint firstItem="Q9W-iL-lqN" firstAttribute="top" secondItem="hof-gz-dcD" secondAttribute="bottom" constant="84" id="MBQ-cf-wRF"/>
+                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="V5X-Yj-7FY" secondAttribute="top" id="N5C-Aj-dcL"/>
+                            <constraint firstItem="hof-gz-dcD" firstAttribute="trailing" secondItem="Q9W-iL-lqN" secondAttribute="trailing" id="OoG-Ol-E0A"/>
+                            <constraint firstItem="RBp-1r-jKm" firstAttribute="trailing" secondItem="V5X-Yj-7FY" secondAttribute="trailing" id="R0a-uY-rbX"/>
+                            <constraint firstItem="hof-gz-dcD" firstAttribute="leading" secondItem="Q9W-iL-lqN" secondAttribute="leading" id="SHz-Z5-g5t"/>
+                            <constraint firstItem="V5X-Yj-7FY" firstAttribute="trailing" secondItem="UwZ-4y-x3P" secondAttribute="trailing" id="SJJ-rR-w2e"/>
+                            <constraint firstItem="Q9W-iL-lqN" firstAttribute="top" secondItem="UwZ-4y-x3P" secondAttribute="top" id="btU-Xb-5vh"/>
+                            <constraint firstItem="V5X-Yj-7FY" firstAttribute="leading" secondItem="UwZ-4y-x3P" secondAttribute="leading" id="fL1-tr-rkw"/>
+                            <constraint firstItem="RBp-1r-jKm" firstAttribute="leading" secondItem="hof-gz-dcD" secondAttribute="leading" id="iWY-bS-RcW"/>
+                            <constraint firstItem="Q9W-iL-lqN" firstAttribute="baseline" secondItem="UwZ-4y-x3P" secondAttribute="firstBaseline" id="isS-dQ-ewc"/>
+                            <constraint firstItem="RBp-1r-jKm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qpd-Nz-HMi"/>
+                            <constraint firstItem="RBp-1r-jKm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vbs-j3-iXh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q9W-iL-lqN" secondAttribute="bottom" constant="114" id="y5M-hL-SNm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Turkish Football Trivia" id="tt4-mF-Otf"/>
