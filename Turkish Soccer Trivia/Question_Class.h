@@ -14,5 +14,8 @@
 @property NSString *Wrong_Answer_1;
 @property NSString *Wrong_Answer_2;
 @property NSString *Wrong_Answer_3;
+@property BOOL picture;
+@property NSString *picture_location;
+
 
 @end
