@@ -23,7 +23,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *TextLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *Image;
 
+@property (weak, nonatomic) IBOutlet UILabel *Correct_Answerdisplay;
 
+@property (weak, nonatomic) IBOutlet UILabel *Number_of_Questions;
 
 
 
@@ -188,10 +190,10 @@
     
     Question_Class *Graeme =[[Question_Class alloc]init];
     Graeme.Question=@"Which GS Manager Is This?";
-    Graeme.Correct_Answer=@"Graeme Souness";
-    Graeme.Wrong_Answer_1=@"Mircea Lucescu";
-    Graeme.Wrong_Answer_2=@"Reinhard Saftig";
-    Graeme.Wrong_Answer_3=@"Sigfried Held";
+    Graeme.Correct_Answer=@"Souness";
+    Graeme.Wrong_Answer_1=@"Lucescu";
+    Graeme.Wrong_Answer_2=@"Saftig";
+    Graeme.Wrong_Answer_3=@"Held";
     Graeme.picture=YES;
     Graeme.picture_location=@"Koydukmu";
     [Questions_List addObject:Graeme];
@@ -203,7 +205,7 @@
     self.TextLabel.hidden=YES;
     self.Image.hidden=YES;
     self.Questions.hidden=NO;
-    
+    self.Correct_Answerdisplay.hidden=YES;
    
    
     [self selectinit];
@@ -266,20 +268,25 @@
     
     if (selected== self.currentquestion.Correct_Answer) {
             self.m++;
+        
+       
+        
         [self nextquestion];
    
         //logging the correct answer amount for game end
         NSLog(@"NUMBER OF CORRECT ANSWERS IS %d",self.m);
     }
     else{
+       
         [self nextquestion];
         
     }
  
     
 }
+
 -(void)nextquestion{
-    
+    self.Correct_Answerdisplay.hidden=YES;
     if (self.j== Questions_List.count) {
       //if all quetions have been answered then end the game
         NSString *strValue = @(self.m).stringValue;
@@ -287,7 +294,7 @@
         [string1 appendString:strValue];
         NSString *messaged=@" out of 40 correct !";
 NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
-      //For some reason I had a problem putting the value of m into *strvalue so I had to append *strvalue to another string. But then that string needed appening also causing his mess here 
+      //For some reason I had a problem putting the value of m into *strvalue so I had to append *strvalue to another string. But then that string needed appening also causing this mess here
         UIAlertController * alert=   [UIAlertController
                                      alertControllerWithTitle:@"Thats The Last Question"
                                       message:arisefate
@@ -297,6 +304,7 @@ NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
             [self viewDidLoad];
             
             self.m=0;
+            //call view did load and clear the correct number of questions viewdid load clears question count 
         }];
         
         
@@ -320,7 +328,7 @@ NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
         
         
         if (self.currentquestion.picture==YES) {
-            
+          //Check if a question is one of those pesky image questions
             self.Questions.hidden=YES;
             self.TextLabel.hidden=NO;
             self.Image.hidden=NO;
@@ -362,7 +370,7 @@ NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
         else
             
         {
-          
+          //hide these values because the previous question was a image question
             self.Questions.hidden=NO;
             self.TextLabel.hidden=YES;
             self.Image.hidden=YES;
@@ -403,6 +411,14 @@ NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
     }
     
 }
+
+
+
+
+
+
+
+
 
 /*
 #pragma mark - Navigation
