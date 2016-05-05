@@ -286,7 +286,7 @@
 }
 
 -(void)nextquestion{
-    self.Correct_Answerdisplay.hidden=YES;
+   
     if (self.j== Questions_List.count) {
       //if all quetions have been answered then end the game
         NSString *strValue = @(self.m).stringValue;
