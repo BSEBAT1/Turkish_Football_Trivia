@@ -22,10 +22,7 @@
 @property int m;
 @property (weak, nonatomic) IBOutlet UITextField *TextLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *Image;
-
-@property (weak, nonatomic) IBOutlet UILabel *Correct_Answerdisplay;
-
-@property (weak, nonatomic) IBOutlet UILabel *Number_of_Questions;
+@property (weak, nonatomic) IBOutlet UILabel *Correct_Answer_Display;
 
 
 
@@ -82,7 +79,7 @@
     Question_Class *Mille=[[Question_Class alloc]init];
     Mille.Question=@"Which Manager Led Besiktas to Three Back to Back Leauge Championships?";
     Mille.Correct_Answer=@"Gordon Milne";
-    Mille.Wrong_Answer_1=@"Christoph Daum";
+    Mille.Wrong_Answer_1=@"Daum";
     Mille.Wrong_Answer_2=@"DelBosque";
     Mille.Wrong_Answer_3=@"Rasim Kara";
     Mille.picture=NO;
@@ -157,7 +154,7 @@
     Wasted_Talent.Correct_Answer=@"Sergen Yalçın";
     Wasted_Talent.Wrong_Answer_1=@"Tanju Colak";
     Wasted_Talent.Wrong_Answer_2=@"Burak Yılmaz";
-    Wasted_Talent.Wrong_Answer_3=@"Emre Belezoğlu";
+    Wasted_Talent.Wrong_Answer_3=@"Volkan Şen";
     Wasted_Talent.picture=NO;
     [Questions_List addObject:Wasted_Talent];
     
@@ -198,15 +195,162 @@
     Graeme.picture_location=@"Koydukmu";
     [Questions_List addObject:Graeme];
     
+    Question_Class *Izmir_cook=[[Question_Class alloc]init];
+    Izmir_cook.Question=@"The Famous Izmir Derby Is Between Karşıyaka S.K. and What Team?";
+    Izmir_cook.Correct_Answer=@"GöztepeS.K.";
+    Izmir_cook.Wrong_Answer_1=@"Altay";
+    Izmir_cook.Wrong_Answer_2=@"AltınorduF.K.";
+    Izmir_cook.Wrong_Answer_3=@"Bucaspor";
+    Izmir_cook.picture=NO;
+    [Questions_List addObject:Izmir_cook];
     
     
+    Question_Class *Hasan_Sas =[[Question_Class alloc]init];
+    Hasan_Sas.Question=@"2002 World Cup Squad Player";
+    Hasan_Sas.Correct_Answer=@"Hasan Şaş";
+    Hasan_Sas.Wrong_Answer_1=@"Emre Aşık";
+    Hasan_Sas.Wrong_Answer_2=@"Nihat Kahveci";
+    Hasan_Sas.Wrong_Answer_3=@"Ergün Penbe";
+    Hasan_Sas.picture=YES;
+    Hasan_Sas.picture_location=@"Hasan_Sas";
+    [Questions_List addObject:Hasan_Sas];
+    
+    Question_Class *Denizli=[[Question_Class alloc]init];
+    Denizli.Question=@"Which Manager Became Champions With All Big 3 Istanbul Teams?";
+    Denizli.Correct_Answer=@"Denzili";
+    Denizli.Wrong_Answer_1=@"Terim";
+    Denizli.Wrong_Answer_2=@"Güneş";
+    Denizli.Wrong_Answer_3=@"Hamzaoğlu";
+    Denizli.picture=NO;
+    [Questions_List addObject:Denizli];
+    
+    Question_Class *Alex_D=[[Question_Class alloc]init];
+    Alex_D.Question=@"How Many League Goals Did Alexsandro de Souza Score?";
+    Alex_D.Correct_Answer=@"136";
+    Alex_D.Wrong_Answer_1=@"144";
+    Alex_D.Wrong_Answer_2=@"87";
+    Alex_D.Wrong_Answer_3=@"208";
+    Alex_D.picture=NO;
+    [Questions_List addObject:Alex_D];
+    
+    Question_Class *Arda=[[Question_Class alloc]init];
+    Arda.Question=@"What Was Arda Turans Total Transfer Fee To ATLÉTICO?";
+    Arda.Correct_Answer=@"15,50 Mill.€";
+    Arda.Wrong_Answer_1=@"5,50 Mill.€";
+    Arda.Wrong_Answer_2=@"150 Mill. €";
+    Arda.Wrong_Answer_3=@"50 Mill. €";
+    Arda.picture=NO;
+    [Questions_List addObject:Arda];
+    
+    
+    Question_Class *World_Cup=[[Question_Class alloc]init];
+    World_Cup.Question=@"Which Team Ended Turkey's 2002 World Cup Run?";
+    World_Cup.Correct_Answer=@"Brazil";
+    World_Cup.Wrong_Answer_1=@"Italy";
+    World_Cup.Wrong_Answer_2=@"Greece";
+    World_Cup.Wrong_Answer_3=@"South Korea";
+    World_Cup.picture=NO;
+    [Questions_List addObject:World_Cup];
+    
+    Question_Class *Altin=[[Question_Class alloc]init];
+    Altin.Question=@"Which Team Is This?";
+    Altin.Correct_Answer=@"Altinordu";
+    Altin.Wrong_Answer_1=@"Altay";
+    Altin.Wrong_Answer_2=@"Antepspor";
+    Altin.Wrong_Answer_3=@"Aliağaspor";
+    Altin.picture=YES;
+    Altin.picture_location=@"Altinordu";
+    [Questions_List addObject:Altin];
+    
+    Question_Class *Siktir_spor=[[Question_Class alloc]init];
+    Siktir_spor.Question=@"This Team Have Been Runners Up 3 Times But Have Never Won The Leauge";
+    Siktir_spor.Correct_Answer=@"Eskişehirspor";
+    Siktir_spor.Wrong_Answer_1=@"Adanaspor";
+    Siktir_spor.Wrong_Answer_2=@"Samsunspor";
+    Siktir_spor.Wrong_Answer_3=@"Elazığspor";
+    Siktir_spor.picture=NO;
+   
+    [Questions_List addObject:Siktir_spor];
+    
+    Question_Class *Carsi=[[Question_Class alloc]init];
+    Carsi.Question=@"These Ultas Support";
+    Carsi.Correct_Answer=@"Beşiktaş";
+    Carsi.Wrong_Answer_1=@"Fenerbahçe";
+    Carsi.Wrong_Answer_2=@"Gaziantepspor";
+    Carsi.Wrong_Answer_3=@"Sivasspor";
+    Carsi.picture=YES;
+    Carsi.picture_location=@"Gazi";
+    [Questions_List addObject:Carsi];
+    
+    
+    Question_Class *Wunderbar=[[Question_Class alloc]init];
+    Wunderbar.Question=@"Which Team Does NOT Have A Volleyball In Their Club Crest?";
+    Wunderbar.Correct_Answer=@"Osmanlispor";
+    Wunderbar.Wrong_Answer_1=@"Gençlerbirliği";
+    Wunderbar.Wrong_Answer_2=@"Eskişehirspor";
+    Wunderbar.Wrong_Answer_3=@"Trabzonspor";
+    Wunderbar.picture=NO;
+    [Questions_List addObject:Wunderbar];
+    
+    
+    
+    Question_Class *Gaziantepli=[[Question_Class alloc]init];
+    Gaziantepli.Question=@"These Are The Colors Of";
+    Gaziantepli.Correct_Answer=@"Gaziantepspor";
+    Gaziantepli.Wrong_Answer_1=@"Kayserispor";
+    Gaziantepli.Wrong_Answer_2=@"Konyaspor";
+    Gaziantepli.Wrong_Answer_3=@"Sivasspor";
+    Gaziantepli.picture=YES;
+    Gaziantepli.picture_location=@"fistik_yedik";
+    [Questions_List addObject:Gaziantepli];
+    
+    
+    Question_Class *Mersin=[[Question_Class alloc]init];
+    Mersin.Question=@"Which Cities Football Squad Is Called The Red Devils?";
+    Mersin.Correct_Answer=@"Mersin";
+    Mersin.Wrong_Answer_1=@"Kayseri";
+    Mersin.Wrong_Answer_2=@"Konya";
+    Mersin.Wrong_Answer_3=@"Trabzonspor";
+    Mersin.picture=NO;
+    [Questions_List addObject:Mersin];
+    
+    Question_Class *Altay=[[Question_Class alloc]init];
+    Altay.Question=@"Until The 2016 Season Which One Of These Teams Had The Same # of Leauge Appereances As Trabzonspor?";
+    Altay.Correct_Answer=@"Altay";
+    Altay.Wrong_Answer_1=@"Adanaspor";
+    Altay.Wrong_Answer_2=@"Vefa";
+    Altay.Wrong_Answer_3=@"Konyaspor";
+    Altay.picture=NO;
+    [Questions_List addObject:Altay];
+    
+    Question_Class *GS=[[Question_Class alloc]init];
+    GS.Question=@"If You Found Yourself At Numbered Stand Screaming Welcome To Hell You Were At Which Stadium?";
+    GS.Correct_Answer=@"Ali Sami Yen";
+    GS.Wrong_Answer_1=@"Inonu";
+    GS.Wrong_Answer_2=@"Aslantepe";
+    GS.Wrong_Answer_3=@"Torku Arena";
+    GS.picture=NO;
+    [Questions_List addObject:GS];
+    
+    
+    for (int x=0; x<Questions_List.count; x++) {
+        [Questions_List exchangeObjectAtIndex:x withObjectAtIndex:arc4random()%30];
+    }
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BACKGROUND"]];
+
+
     
    //These Stay hidden unless there is a picture to be loaded
     self.TextLabel.hidden=YES;
     self.Image.hidden=YES;
     self.Questions.hidden=NO;
-    self.Correct_Answerdisplay.hidden=YES;
+    self.Correct_Answer_Display.hidden=YES;
    
+    
+    
+    
+self.Questions.selectable = NO;
    
     [self selectinit];
         
@@ -264,7 +408,9 @@
 - (IBAction)ButtonPress:(id)sender {
     UIButton *someButton = (UIButton*)sender;
     NSString *selected= [someButton titleForState:UIControlStateNormal];
-    
+    NSArray *buttoned=[[NSArray alloc]initWithObjects:self.Button_1,self.Button_2,self.Button_3,self.Button_4, nil];
+  
+
     
     if (selected== self.currentquestion.Correct_Answer) {
             self.m++;
@@ -278,7 +424,29 @@
     }
     else{
        
-        [self nextquestion];
+        
+        [UIView transitionWithView:someButton duration:1 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+            
+            [someButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            for (UIButton *buttonatindex
+                 in buttoned) {
+                if ([buttonatindex titleForState:UIControlStateNormal]==self.currentquestion.Correct_Answer) {
+                    [buttonatindex setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+                    
+                    
+                }
+                
+            }
+            
+            
+        } completion:^(BOOL finsihed){
+            
+            for (UIButton *clearbutton in buttoned) {
+                [clearbutton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            }
+            [ NSThread sleepForTimeInterval:2];
+            self.nextquestion;
+        }];
         
     }
  
@@ -292,7 +460,7 @@
         NSString *strValue = @(self.m).stringValue;
         NSMutableString *string1 = [NSMutableString stringWithString: @"You got "];
         [string1 appendString:strValue];
-        NSString *messaged=@" out of 40 correct !";
+        NSString *messaged=@" out of 31 correct !";
 NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
       //For some reason I had a problem putting the value of m into *strvalue so I had to append *strvalue to another string. But then that string needed appening also causing this mess here
         UIAlertController * alert=   [UIAlertController
@@ -412,7 +580,21 @@ NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
     
 }
 
+-(void)wronganswerselected{
 
+    
+    self.Correct_Answer_Display.hidden=NO;
+    [UIView transitionWithView:self.Button_1 duration:1 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+        
+        [self.Button_1 setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        
+    } completion:^(BOOL finsihed){
+         [NSThread sleepForTimeInterval:5];
+        [self.Button_1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        self.nextquestion;
+    }];
+    
+}
 
 
 
