@@ -104,7 +104,7 @@
     [Questions_List addObject:Trabzon];
     
     Question_Class *Rezilik=[[Question_Class alloc]init];
-    Rezilik.Question=@"Despite Qualifiying Which World Cup Did Turkey Miss Because They Couldnt Afford To Go?";
+    Rezilik.Question=@"Despite Qualifiying Which World Cup Did Turkey Miss Because They Couldn't Afford To Go?";
     Rezilik.Correct_Answer=@"1950";
     Rezilik.Wrong_Answer_1=@"1954";
     Rezilik.Wrong_Answer_2=@"1994";
@@ -123,7 +123,7 @@
     
     
     Question_Class *Bursaspor=[[Question_Class alloc]init];
-    Bursaspor.Question=@"Which Year Did Bursaspor Win The Super Leauge?";
+    Bursaspor.Question=@"Which Year Did Bursaspor Win The Super League?";
     Bursaspor.Correct_Answer=@"2010";
     Bursaspor.Wrong_Answer_1=@"2011";
     Bursaspor.Wrong_Answer_2=@"2009";
@@ -263,7 +263,7 @@
     [Questions_List addObject:Altin];
     
     Question_Class *Siktir_spor=[[Question_Class alloc]init];
-    Siktir_spor.Question=@"This Team Have Been Runners Up 3 Times But Have Never Won The Leauge";
+    Siktir_spor.Question=@"This Team Have Been Runners Up 3 Times But Have Never Won The League";
     Siktir_spor.Correct_Answer=@"Eskişehirspor";
     Siktir_spor.Wrong_Answer_1=@"Adanaspor";
     Siktir_spor.Wrong_Answer_2=@"Samsunspor";
@@ -273,7 +273,7 @@
     [Questions_List addObject:Siktir_spor];
     
     Question_Class *Carsi=[[Question_Class alloc]init];
-    Carsi.Question=@"These Ultas Support";
+    Carsi.Question=@"These Ultras Support";
     Carsi.Correct_Answer=@"Beşiktaş";
     Carsi.Wrong_Answer_1=@"Fenerbahçe";
     Carsi.Wrong_Answer_2=@"Gaziantepspor";
@@ -315,7 +315,7 @@
     [Questions_List addObject:Mersin];
     
     Question_Class *Altay=[[Question_Class alloc]init];
-    Altay.Question=@"Until The 2016 Season Which One Of These Teams Had The Same # of Leauge Appereances As Trabzonspor?";
+    Altay.Question=@"Until The 2016 Season Which One Of These Teams Had The Same # of League Appearances As Trabzonspor?";
     Altay.Correct_Answer=@"Altay";
     Altay.Wrong_Answer_1=@"Adanaspor";
     Altay.Wrong_Answer_2=@"Vefa";
@@ -337,7 +337,7 @@
         [Questions_List exchangeObjectAtIndex:x withObjectAtIndex:arc4random()%30];
     }
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BACKGROUND"]];
+    
 
 
     
@@ -345,12 +345,10 @@
     self.TextLabel.hidden=YES;
     self.Image.hidden=YES;
     self.Questions.hidden=NO;
-    self.Correct_Answer_Display.hidden=YES;
-   
+    self.Correct_Answer_Display.hidden=NO;
+    self.Correct_Answer_Display.text=@"Score:0";
     
-    
-    
-self.Questions.selectable = NO;
+    self.Questions.selectable = NO;
    
     [self selectinit];
         
@@ -421,6 +419,12 @@ self.Questions.selectable = NO;
    
         //logging the correct answer amount for game end
         NSLog(@"NUMBER OF CORRECT ANSWERS IS %d",self.m);
+        
+        NSString *score=@(self.m).stringValue;
+        NSMutableString *strings = [NSMutableString stringWithString: @"Score:"];
+        [strings appendString:score];
+        self.Correct_Answer_Display.text=strings;
+
     }
     else{
        
