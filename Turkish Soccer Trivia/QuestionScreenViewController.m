@@ -351,6 +351,8 @@
     self.Button_2.layer.cornerRadius=20;
     self.Button_3.layer.cornerRadius=20;
     self.Button_4.layer.cornerRadius=20;
+    self.Questions.layer.cornerRadius=20;
+
     
     self.Questions.selectable = NO;
    

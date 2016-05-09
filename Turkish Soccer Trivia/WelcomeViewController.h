@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WelcomeViewController : UIViewController
+@interface WelcomeViewController : UIViewController<UIPickerViewDelegate,UIPickerViewDataSource>
+@property NSArray *language_options;
+
 
 @end

@@ -9,6 +9,9 @@
 #import "WelcomeViewController.h"
 
 @interface WelcomeViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *Welcome_Image;
+@property (weak, nonatomic) IBOutlet UITextField *Text_Container;
+
 
 @end
 
@@ -16,7 +19,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.language_options=[[NSArray alloc]initWithObjects:@"Turkish",@"English", nil];
+    UIPickerView *language_selection=[[UIPickerView alloc]init];
+    language_selection.delegate=self;
+    language_selection.dataSource=self;
+    [language_selection setShowsSelectionIndicator:YES];
+    [self.Text_Container setInputView:language_selection];
+    
+}
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    
+    return self.language_options.count;
+}
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    return [self.language_options objectAtIndex:row];
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    
+    self.Text_Container.text=[self.language_options objectAtIndex:row];
+    [self.Text_Container resignFirstResponder];
+    
 }
 
 - (void)didReceiveMemoryWarning {
