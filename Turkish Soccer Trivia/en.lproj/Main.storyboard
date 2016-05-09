@@ -20,33 +20,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND" translatesAutoresizingMaskIntoConstraints="NO" id="aJ0-Pa-9Nf">
-                                <rect key="frame" x="51" y="576" width="300" height="152"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="sbR-61-Pdj"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hof-gz-dcD">
-                                <rect key="frame" x="20" y="513" width="115" height="48"/>
+                                <rect key="frame" x="20" y="524" width="115" height="37"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="BhK-Pb-V7w"/>
+                                    <constraint firstAttribute="height" constant="37" id="BhK-Pb-V7w"/>
                                     <constraint firstAttribute="width" constant="115" id="lRS-ok-Udv"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Galatasary">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VX-OW-LIi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9W-iL-lqN">
-                                <rect key="frame" x="20" y="613" width="115" height="50"/>
+                                <rect key="frame" x="20" y="613" width="115" height="37"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="xb0-Ro-SlN"/>
+                                    <constraint firstAttribute="height" constant="37" id="xb0-Ro-SlN"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Trabzonspor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -55,9 +51,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwZ-4y-x3P">
-                                <rect key="frame" x="279" y="613" width="115" height="50"/>
+                                <rect key="frame" x="279" y="613" width="115" height="37"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Fenerbahce">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -72,11 +69,12 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-Yj-7FY">
-                                <rect key="frame" x="279" y="512" width="115" height="50"/>
+                                <rect key="frame" x="279" y="525" width="115" height="37"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="ueu-Ui-cMQ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Besiktas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -101,7 +99,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZD-kZ-4lk">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZD-kZ-4lk">
                                 <rect key="frame" x="-6" y="-22" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="xE9-yk-TgA"/>
@@ -110,22 +108,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="RBp-1r-jKm" secondAttribute="bottom" constant="155" id="2vy-2D-gPL"/>
+                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="RBp-1r-jKm" secondAttribute="bottom" constant="166" id="2vy-2D-gPL"/>
+                            <constraint firstItem="MPz-bq-65U" firstAttribute="leading" secondItem="RBp-1r-jKm" secondAttribute="leading" id="5RQ-wg-A3f"/>
                             <constraint firstItem="UwZ-4y-x3P" firstAttribute="baseline" secondItem="Q9W-iL-lqN" secondAttribute="firstBaseline" id="5Uf-el-gYa"/>
-                            <constraint firstItem="aJ0-Pa-9Nf" firstAttribute="centerX" secondItem="MPz-bq-65U" secondAttribute="centerX" constant="-6" id="7Wd-od-WAu"/>
                             <constraint firstItem="UwZ-4y-x3P" firstAttribute="top" secondItem="V5X-Yj-7FY" secondAttribute="bottom" constant="51" id="8kh-LF-lJI"/>
-                            <constraint firstItem="aJ0-Pa-9Nf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-8" id="Cem-0u-oL2"/>
+                            <constraint firstItem="MPz-bq-65U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E0E-Ke-O4N"/>
                             <constraint firstItem="RBp-1r-jKm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Eoc-ES-eMM"/>
-                            <constraint firstItem="MPz-bq-65U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FW2-bD-9wj"/>
-                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="qux-LE-3or" secondAttribute="bottom" constant="15" id="JoY-57-RcR"/>
+                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="qux-LE-3or" secondAttribute="bottom" constant="26" id="JoY-57-RcR"/>
                             <constraint firstItem="Q9W-iL-lqN" firstAttribute="top" secondItem="hof-gz-dcD" secondAttribute="bottom" constant="52" id="MBQ-cf-wRF"/>
-                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="V5X-Yj-7FY" secondAttribute="top" constant="1" id="N5C-Aj-dcL"/>
+                            <constraint firstItem="hof-gz-dcD" firstAttribute="top" secondItem="V5X-Yj-7FY" secondAttribute="top" constant="-1" id="N5C-Aj-dcL"/>
+                            <constraint firstItem="RBp-1r-jKm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OB0-Qj-bIS"/>
                             <constraint firstItem="hof-gz-dcD" firstAttribute="trailing" secondItem="Q9W-iL-lqN" secondAttribute="trailing" id="OoG-Ol-E0A"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MPz-bq-65U" secondAttribute="trailing" id="QCM-Mi-dLJ"/>
                             <constraint firstItem="RBp-1r-jKm" firstAttribute="trailing" secondItem="V5X-Yj-7FY" secondAttribute="trailing" id="R0a-uY-rbX"/>
                             <constraint firstItem="hof-gz-dcD" firstAttribute="leading" secondItem="Q9W-iL-lqN" secondAttribute="leading" id="SHz-Z5-g5t"/>
                             <constraint firstItem="V5X-Yj-7FY" firstAttribute="trailing" secondItem="UwZ-4y-x3P" secondAttribute="trailing" id="SJJ-rR-w2e"/>
-                            <constraint firstItem="aJ0-Pa-9Nf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51" id="SwT-W0-SJa"/>
                             <constraint firstItem="MPz-bq-65U" firstAttribute="top" secondItem="RBp-1r-jKm" secondAttribute="top" id="ULM-a8-NIH"/>
                             <constraint firstItem="779-Nw-uxB" firstAttribute="bottom" secondItem="RBp-1r-jKm" secondAttribute="bottom" constant="53" id="aa6-wj-AAW"/>
                             <constraint firstItem="Q9W-iL-lqN" firstAttribute="top" secondItem="UwZ-4y-x3P" secondAttribute="top" id="btU-Xb-5vh"/>
@@ -133,13 +129,14 @@
                             <constraint firstItem="MPz-bq-65U" firstAttribute="leading" secondItem="779-Nw-uxB" secondAttribute="leading" constant="13" id="esb-MM-gcQ"/>
                             <constraint firstItem="MPz-bq-65U" firstAttribute="trailing" secondItem="779-Nw-uxB" secondAttribute="trailing" constant="-13" id="f3h-0x-4Cn"/>
                             <constraint firstItem="V5X-Yj-7FY" firstAttribute="leading" secondItem="UwZ-4y-x3P" secondAttribute="leading" id="fL1-tr-rkw"/>
-                            <constraint firstItem="aJ0-Pa-9Nf" firstAttribute="top" secondItem="GZD-kZ-4lk" secondAttribute="bottom" constant="554" id="hSl-r6-YjB"/>
                             <constraint firstItem="RBp-1r-jKm" firstAttribute="leading" secondItem="hof-gz-dcD" secondAttribute="leading" id="iWY-bS-RcW"/>
                             <constraint firstItem="Q9W-iL-lqN" firstAttribute="baseline" secondItem="UwZ-4y-x3P" secondAttribute="firstBaseline" id="isS-dQ-ewc"/>
-                            <constraint firstItem="RBp-1r-jKm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qpd-Nz-HMi"/>
+                            <constraint firstItem="GZD-kZ-4lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-26" id="nCf-rs-8dV"/>
                             <constraint firstItem="qux-LE-3or" firstAttribute="leading" secondItem="hof-gz-dcD" secondAttribute="leading" id="uES-Fj-e8h"/>
-                            <constraint firstItem="RBp-1r-jKm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vbs-j3-iXh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q9W-iL-lqN" secondAttribute="bottom" constant="73" id="y5M-hL-SNm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GZD-kZ-4lk" secondAttribute="trailing" constant="-14" id="uES-ee-jf1"/>
+                            <constraint firstItem="y3c-jy-aDJ" firstAttribute="top" secondItem="GZD-kZ-4lk" secondAttribute="bottom" constant="42" id="xyv-1Y-Cyw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q9W-iL-lqN" secondAttribute="bottom" constant="86" id="y5M-hL-SNm"/>
+                            <constraint firstItem="MPz-bq-65U" firstAttribute="trailing" secondItem="RBp-1r-jKm" secondAttribute="trailing" id="yP5-sZ-vEa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Turkish Football Trivia" id="tt4-mF-Otf"/>
@@ -158,6 +155,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116" y="398"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="u9m-ye-T1q">
+            <objects>
+                <viewController id="bjt-bW-l3b" customClass="WelcomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C8S-Zq-ZXf"/>
+                        <viewControllerLayoutGuide type="bottom" id="hNp-yN-5XQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XdO-G8-1NO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ym-RS-JP1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Turkish Football Trivia" id="yUa-QG-wvs"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dB-p6-gKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="btv-Q4-y2e">
@@ -178,7 +202,4 @@
             <point key="canvasLocation" x="304" y="398"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="BACKGROUND" width="500" height="500"/>
-    </resources>
 </document>

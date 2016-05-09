@@ -347,6 +347,10 @@
     self.Questions.hidden=NO;
     self.Correct_Answer_Display.hidden=NO;
     self.Correct_Answer_Display.text=@"Score:0";
+    self.Button_1.layer.cornerRadius=20;
+    self.Button_2.layer.cornerRadius=20;
+    self.Button_3.layer.cornerRadius=20;
+    self.Button_4.layer.cornerRadius=20;
     
     self.Questions.selectable = NO;
    

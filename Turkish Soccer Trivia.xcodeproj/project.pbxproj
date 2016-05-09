@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5226C1F41CDFCDBC0086C33F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226C1F31CDFCDBC0086C33F /* WelcomeViewController.m */; };
 		52B8EEFC1CCD8557005ECF03 /* Question_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8EEFB1CCD8557005ECF03 /* Question_Class.m */; };
 		52D4821A1CCD4F8C00E635C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D482191CCD4F8C00E635C4 /* main.m */; };
 		52D4821D1CCD4F8C00E635C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D4821C1CCD4F8C00E635C4 /* AppDelegate.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5226C1F21CDFCDBC0086C33F /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		5226C1F31CDFCDBC0086C33F /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		52B8EEFA1CCD8557005ECF03 /* Question_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question_Class.h; sourceTree = "<group>"; };
 		52B8EEFB1CCD8557005ECF03 /* Question_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question_Class.m; sourceTree = "<group>"; };
 		52D482151CCD4F8C00E635C4 /* Turkish Soccer Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Turkish Soccer Trivia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +74,8 @@
 				52D4821E1CCD4F8C00E635C4 /* ViewController.h */,
 				52D4821F1CCD4F8D00E635C4 /* ViewController.m */,
 				52D482211CCD4F8D00E635C4 /* Main.storyboard */,
+				5226C1F21CDFCDBC0086C33F /* WelcomeViewController.h */,
+				5226C1F31CDFCDBC0086C33F /* WelcomeViewController.m */,
 				52D482321CCD520E00E635C4 /* QuestionScreenViewController.h */,
 				52D482331CCD520E00E635C4 /* QuestionScreenViewController.m */,
 				52B8EEFA1CCD8557005ECF03 /* Question_Class.h */,
@@ -167,6 +172,7 @@
 				52D482201CCD4F8D00E635C4 /* ViewController.m in Sources */,
 				52D482341CCD520E00E635C4 /* QuestionScreenViewController.m in Sources */,
 				52D4821D1CCD4F8C00E635C4 /* AppDelegate.m in Sources */,
+				5226C1F41CDFCDBC0086C33F /* WelcomeViewController.m in Sources */,
 				52D4821A1CCD4F8C00E635C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
