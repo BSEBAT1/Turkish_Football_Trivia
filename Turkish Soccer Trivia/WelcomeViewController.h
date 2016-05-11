@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuestionScreenViewController.h"
 
 @interface WelcomeViewController : UIViewController<UIPickerViewDelegate,UIPickerViewDataSource>
 @property NSArray *language_options;

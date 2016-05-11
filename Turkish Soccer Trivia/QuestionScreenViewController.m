@@ -26,6 +26,7 @@
 
 
 
+
 @end
 
 
@@ -40,297 +41,590 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"The Language is %@",self.language);
     
     
     // Do any additional setup after loading the view.
     Questions_List=[[NSMutableArray alloc]init];
     
     //Initilizing Question Objects
-    
-    Question_Class *Super_Lig96=[[Question_Class alloc]init];
-    Super_Lig96.Question=@"Which Team Won the Super Lig in 1996?";
-    Super_Lig96.Correct_Answer=@"Galatasaray";
-    Super_Lig96.Wrong_Answer_1=@"Besiktas";
-    Super_Lig96.Wrong_Answer_2=@"Fenerbahce";
-    Super_Lig96.Wrong_Answer_3=@"Trabzonspor";
-    Super_Lig96.picture=NO;
-    [Questions_List addObject:Super_Lig96];
-    
-
-   
-    Question_Class *All_Time=[[Question_Class alloc]init];
-    All_Time.Question=@"Who Is the All Time Top Goal Scorer in Turkish Football?";
-    All_Time.Correct_Answer=@"Metin Oktay";
-    All_Time.Wrong_Answer_1=@"Tanju Çolak";
-    All_Time.Wrong_Answer_2=@"Hakan Şükür";
-    All_Time.Wrong_Answer_3=@"Alex";
-    All_Time.picture=NO;
-    [Questions_List addObject:All_Time];
-    
-    Question_Class *Lefter=[[Question_Class alloc]init];
-    Lefter.Question=@"Which Famous Fenerbahce Player Was Known As Ordinaryüs?";
-    Lefter.Correct_Answer=@"Lefter Küçük";
-    Lefter.Wrong_Answer_1=@"Oğuz Çetin";
-    Lefter.Wrong_Answer_2=@"Colin Kazim";
-    Lefter.Wrong_Answer_3=@"Nicolas Anelka";
-    Lefter.picture=NO;
-    [Questions_List addObject:Lefter];
-    
-    Question_Class *Mille=[[Question_Class alloc]init];
-    Mille.Question=@"Which Manager Led Besiktas to Three Back to Back Leauge Championships?";
-    Mille.Correct_Answer=@"Gordon Milne";
-    Mille.Wrong_Answer_1=@"Daum";
-    Mille.Wrong_Answer_2=@"DelBosque";
-    Mille.Wrong_Answer_3=@"Rasim Kara";
-    Mille.picture=NO;
-    [Questions_List addObject:Mille];
-    
-    Question_Class *Fatih=[[Question_Class alloc]init];
-    Fatih.Question=@"What Was the First Italian Team Fatih Terim Managed?";
-    Fatih.Correct_Answer=@"Fiorentina";
-    Fatih.Wrong_Answer_1=@"A.C. Milan";
-    Fatih.Wrong_Answer_2=@"Inter Milan";
-    Fatih.Wrong_Answer_3=@"Juventus";
-    Fatih.picture=NO;
-    [Questions_List addObject:Fatih];
-    
-    Question_Class *Trabzon=[[Question_Class alloc]init];
-    Trabzon.Question=@"Which Season Did Trabzonspor Win Their First Championship?";
-    Trabzon.Correct_Answer=@"1975–76";
-    Trabzon.Wrong_Answer_1=@"1976-1977";
-    Trabzon.Wrong_Answer_2=@"1984-1985";
-    Trabzon.Wrong_Answer_3=@"1970-1971";
-    Trabzon.picture=NO;
-    [Questions_List addObject:Trabzon];
-    
-    Question_Class *Rezilik=[[Question_Class alloc]init];
-    Rezilik.Question=@"Despite Qualifiying Which World Cup Did Turkey Miss Because They Couldn't Afford To Go?";
-    Rezilik.Correct_Answer=@"1950";
-    Rezilik.Wrong_Answer_1=@"1954";
-    Rezilik.Wrong_Answer_2=@"1994";
-    Rezilik.Wrong_Answer_3=@"1978";
-    Rezilik.picture=NO;
-    [Questions_List addObject:Rezilik];
-    
-    Question_Class *Bursa=[[Question_Class alloc]init];
-    Bursa.Question=@"What Is The Name Of Bursaspor Ultras?";
-    Bursa.Correct_Answer=@"Texas";
-    Bursa.Wrong_Answer_1=@"Cowboys";
-    Bursa.Wrong_Answer_2=@"Indians";
-    Bursa.Wrong_Answer_3=@"Crocodiles";
-    Bursa.picture=NO;
-    [Questions_List addObject:Bursa];
-    
-    
-    Question_Class *Bursaspor=[[Question_Class alloc]init];
-    Bursaspor.Question=@"Which Year Did Bursaspor Win The Super League?";
-    Bursaspor.Correct_Answer=@"2010";
-    Bursaspor.Wrong_Answer_1=@"2011";
-    Bursaspor.Wrong_Answer_2=@"2009";
-    Bursaspor.Wrong_Answer_3=@"2012";
-    Bursaspor.picture=NO;
-    [Questions_List addObject:Bursaspor];
-    
-    Question_Class *Istanbul_Lig=[[Question_Class alloc]init];
-    Istanbul_Lig.Question=@"What Was The Name Of The First Football Pitch In Turkey?";
-    Istanbul_Lig.Correct_Answer=@"Papazın Çayırı";
-    Istanbul_Lig.Wrong_Answer_1=@"Seyrantepe";
-    Istanbul_Lig.Wrong_Answer_2=@"Geniş Alan";
-    Istanbul_Lig.Wrong_Answer_3=@"Aslantepe";
-    Istanbul_Lig.picture=NO;
-    [Questions_List addObject:Istanbul_Lig];
-    
-    Question_Class *Constantinople=[[Question_Class alloc]init];
-    Constantinople.Question=@"What Was The Name Of The First Football Club In Istanbul?";
-    Constantinople.Correct_Answer=@"Cadi-KeuyF.C.";
-    Constantinople.Wrong_Answer_1=@"ModaF.C.";
-    Constantinople.Wrong_Answer_2=@"ImogeneF.C.";
-    Constantinople.Wrong_Answer_3=@"Union Club";
-    Constantinople.picture=NO;
-    [Questions_List addObject:Constantinople];
-    
-    Question_Class *Wasted_Talent=[[Question_Class alloc]init];
-    Wasted_Talent.Question=@"Who Was The First Turkish Player To Play At All Big 4 Teams?";
-    Wasted_Talent.Correct_Answer=@"Sergen Yalçın";
-    Wasted_Talent.Wrong_Answer_1=@"Tanju Colak";
-    Wasted_Talent.Wrong_Answer_2=@"Burak Yılmaz";
-    Wasted_Talent.Wrong_Answer_3=@"Volkan Şen";
-    Wasted_Talent.picture=NO;
-    [Questions_List addObject:Wasted_Talent];
-    
-    Question_Class *akhisar=[[Question_Class alloc]init];
-    akhisar.Question=@"What Is Akhisar Belediyespor Famous Nickname?";
-    akhisar.Correct_Answer=@"Akigo";
-    akhisar.Wrong_Answer_1=@"Yiğidolar";
-    akhisar.Wrong_Answer_2=@"Anadolu Yıldızı";
-    akhisar.Wrong_Answer_3=@"Şahinler";
-    akhisar.picture=NO;
-    [Questions_List addObject:akhisar];
-    
-    Question_Class *Gheorghe_Hagi=[[Question_Class alloc]init];
-    Gheorghe_Hagi.Question=@"How Old Was Gheorghe Hagi When He Arrived At Galatasaray?";
-    Gheorghe_Hagi.Correct_Answer=@"31";
-    Gheorghe_Hagi.Wrong_Answer_1=@"35";
-    Gheorghe_Hagi.Wrong_Answer_2=@"29";
-    Gheorghe_Hagi.Wrong_Answer_3=@"32";
-    Gheorghe_Hagi.picture=NO;
-    [Questions_List addObject:Gheorghe_Hagi];
-    
-    Question_Class *Tuncay=[[Question_Class alloc]init];
-    Tuncay.Question=@"What Team Did Tuncay Şanlı Join After Fenerbahce?";
-    Tuncay.Correct_Answer=@"Middlesbrough";
-    Tuncay.Wrong_Answer_1=@"Stoke City";
-    Tuncay.Wrong_Answer_2=@"Herta Berlin";
-    Tuncay.Wrong_Answer_3=@"Millwall FC";
-    Tuncay.picture=NO;
-    [Questions_List addObject:Tuncay];
-    
-    Question_Class *Graeme =[[Question_Class alloc]init];
-    Graeme.Question=@"Which GS Manager Is This?";
-    Graeme.Correct_Answer=@"Souness";
-    Graeme.Wrong_Answer_1=@"Lucescu";
-    Graeme.Wrong_Answer_2=@"Saftig";
-    Graeme.Wrong_Answer_3=@"Held";
-    Graeme.picture=YES;
-    Graeme.picture_location=@"Koydukmu";
-    [Questions_List addObject:Graeme];
-    
-    Question_Class *Izmir_cook=[[Question_Class alloc]init];
-    Izmir_cook.Question=@"The Famous Izmir Derby Is Between Karşıyaka S.K. and What Team?";
-    Izmir_cook.Correct_Answer=@"GöztepeS.K.";
-    Izmir_cook.Wrong_Answer_1=@"Altay";
-    Izmir_cook.Wrong_Answer_2=@"AltınorduF.K.";
-    Izmir_cook.Wrong_Answer_3=@"Bucaspor";
-    Izmir_cook.picture=NO;
-    [Questions_List addObject:Izmir_cook];
-    
-    
-    Question_Class *Hasan_Sas =[[Question_Class alloc]init];
-    Hasan_Sas.Question=@"2002 World Cup Squad Player";
-    Hasan_Sas.Correct_Answer=@"Hasan Şaş";
-    Hasan_Sas.Wrong_Answer_1=@"Emre Aşık";
-    Hasan_Sas.Wrong_Answer_2=@"Nihat Kahveci";
-    Hasan_Sas.Wrong_Answer_3=@"Ergün Penbe";
-    Hasan_Sas.picture=YES;
-    Hasan_Sas.picture_location=@"Hasan_Sas";
-    [Questions_List addObject:Hasan_Sas];
-    
-    Question_Class *Denizli=[[Question_Class alloc]init];
-    Denizli.Question=@"Which Manager Became Champions With All Big 3 Istanbul Teams?";
-    Denizli.Correct_Answer=@"Denzili";
-    Denizli.Wrong_Answer_1=@"Terim";
-    Denizli.Wrong_Answer_2=@"Güneş";
-    Denizli.Wrong_Answer_3=@"Hamzaoğlu";
-    Denizli.picture=NO;
-    [Questions_List addObject:Denizli];
-    
-    Question_Class *Alex_D=[[Question_Class alloc]init];
-    Alex_D.Question=@"How Many League Goals Did Alexsandro de Souza Score?";
-    Alex_D.Correct_Answer=@"136";
-    Alex_D.Wrong_Answer_1=@"144";
-    Alex_D.Wrong_Answer_2=@"87";
-    Alex_D.Wrong_Answer_3=@"208";
-    Alex_D.picture=NO;
-    [Questions_List addObject:Alex_D];
-    
-    Question_Class *Arda=[[Question_Class alloc]init];
-    Arda.Question=@"What Was Arda Turans Total Transfer Fee To ATLÉTICO?";
-    Arda.Correct_Answer=@"15,50 Mill.€";
-    Arda.Wrong_Answer_1=@"5,50 Mill.€";
-    Arda.Wrong_Answer_2=@"150 Mill. €";
-    Arda.Wrong_Answer_3=@"50 Mill. €";
-    Arda.picture=NO;
-    [Questions_List addObject:Arda];
-    
-    
-    Question_Class *World_Cup=[[Question_Class alloc]init];
-    World_Cup.Question=@"Which Team Ended Turkey's 2002 World Cup Run?";
-    World_Cup.Correct_Answer=@"Brazil";
-    World_Cup.Wrong_Answer_1=@"Italy";
-    World_Cup.Wrong_Answer_2=@"Greece";
-    World_Cup.Wrong_Answer_3=@"South Korea";
-    World_Cup.picture=NO;
-    [Questions_List addObject:World_Cup];
-    
-    Question_Class *Altin=[[Question_Class alloc]init];
-    Altin.Question=@"Which Team Is This?";
-    Altin.Correct_Answer=@"Altinordu";
-    Altin.Wrong_Answer_1=@"Altay";
-    Altin.Wrong_Answer_2=@"Antepspor";
-    Altin.Wrong_Answer_3=@"Aliağaspor";
-    Altin.picture=YES;
-    Altin.picture_location=@"Altinordu";
-    [Questions_List addObject:Altin];
-    
-    Question_Class *Siktir_spor=[[Question_Class alloc]init];
-    Siktir_spor.Question=@"This Team Have Been Runners Up 3 Times But Have Never Won The League";
-    Siktir_spor.Correct_Answer=@"Eskişehirspor";
-    Siktir_spor.Wrong_Answer_1=@"Adanaspor";
-    Siktir_spor.Wrong_Answer_2=@"Samsunspor";
-    Siktir_spor.Wrong_Answer_3=@"Elazığspor";
-    Siktir_spor.picture=NO;
-   
-    [Questions_List addObject:Siktir_spor];
-    
-    Question_Class *Carsi=[[Question_Class alloc]init];
-    Carsi.Question=@"These Ultras Support";
-    Carsi.Correct_Answer=@"Beşiktaş";
-    Carsi.Wrong_Answer_1=@"Fenerbahçe";
-    Carsi.Wrong_Answer_2=@"Gaziantepspor";
-    Carsi.Wrong_Answer_3=@"Sivasspor";
-    Carsi.picture=YES;
-    Carsi.picture_location=@"Gazi";
-    [Questions_List addObject:Carsi];
-    
-    
-    Question_Class *Wunderbar=[[Question_Class alloc]init];
-    Wunderbar.Question=@"Which Team Does NOT Have A Volleyball In Their Club Crest?";
-    Wunderbar.Correct_Answer=@"Osmanlispor";
-    Wunderbar.Wrong_Answer_1=@"Gençlerbirliği";
-    Wunderbar.Wrong_Answer_2=@"Eskişehirspor";
-    Wunderbar.Wrong_Answer_3=@"Trabzonspor";
-    Wunderbar.picture=NO;
-    [Questions_List addObject:Wunderbar];
-    
-    
-    
-    Question_Class *Gaziantepli=[[Question_Class alloc]init];
-    Gaziantepli.Question=@"These Are The Colors Of";
-    Gaziantepli.Correct_Answer=@"Gaziantepspor";
-    Gaziantepli.Wrong_Answer_1=@"Kayserispor";
-    Gaziantepli.Wrong_Answer_2=@"Konyaspor";
-    Gaziantepli.Wrong_Answer_3=@"Sivasspor";
-    Gaziantepli.picture=YES;
-    Gaziantepli.picture_location=@"fistik_yedik";
-    [Questions_List addObject:Gaziantepli];
-    
-    
-    Question_Class *Mersin=[[Question_Class alloc]init];
-    Mersin.Question=@"Which Cities Football Squad Is Called The Red Devils?";
-    Mersin.Correct_Answer=@"Mersin";
-    Mersin.Wrong_Answer_1=@"Kayseri";
-    Mersin.Wrong_Answer_2=@"Konya";
-    Mersin.Wrong_Answer_3=@"Trabzonspor";
-    Mersin.picture=NO;
-    [Questions_List addObject:Mersin];
-    
-    Question_Class *Altay=[[Question_Class alloc]init];
-    Altay.Question=@"Until The 2016 Season Which One Of These Teams Had The Same # of League Appearances As Trabzonspor?";
-    Altay.Correct_Answer=@"Altay";
-    Altay.Wrong_Answer_1=@"Adanaspor";
-    Altay.Wrong_Answer_2=@"Vefa";
-    Altay.Wrong_Answer_3=@"Konyaspor";
-    Altay.picture=NO;
-    [Questions_List addObject:Altay];
-    
-    Question_Class *GS=[[Question_Class alloc]init];
-    GS.Question=@"If You Found Yourself At Numbered Stand Screaming Welcome To Hell You Were At Which Stadium?";
-    GS.Correct_Answer=@"Ali Sami Yen";
-    GS.Wrong_Answer_1=@"Inonu";
-    GS.Wrong_Answer_2=@"Aslantepe";
-    GS.Wrong_Answer_3=@"Torku Arena";
-    GS.picture=NO;
-    [Questions_List addObject:GS];
+    if ([self.language isEqual:@"English"]) {
+        Question_Class *Super_Lig96=[[Question_Class alloc]init];
+        Super_Lig96.Question=@"Which Team Won the Super Lig in 1996?";
+        Super_Lig96.Correct_Answer=@"Galatasaray";
+        Super_Lig96.Wrong_Answer_1=@"Besiktas";
+        Super_Lig96.Wrong_Answer_2=@"Fenerbahce";
+        Super_Lig96.Wrong_Answer_3=@"Trabzonspor";
+        Super_Lig96.picture=NO;
+        [Questions_List addObject:Super_Lig96];
+        
+        
+        
+        Question_Class *All_Time=[[Question_Class alloc]init];
+        All_Time.Question=@"Who Is the All Time Top Goal Scorer in Turkish Football?";
+        All_Time.Correct_Answer=@"Metin Oktay";
+        All_Time.Wrong_Answer_1=@"Tanju Çolak";
+        All_Time.Wrong_Answer_2=@"Hakan Şükür";
+        All_Time.Wrong_Answer_3=@"Alex";
+        All_Time.picture=NO;
+        [Questions_List addObject:All_Time];
+        
+        Question_Class *Lefter=[[Question_Class alloc]init];
+        Lefter.Question=@"Which Famous Fenerbahce Player Was Known As Ordinaryüs?";
+        Lefter.Correct_Answer=@"Lefter Küçük";
+        Lefter.Wrong_Answer_1=@"Oğuz Çetin";
+        Lefter.Wrong_Answer_2=@"Colin Kazim";
+        Lefter.Wrong_Answer_3=@"Nicolas Anelka";
+        Lefter.picture=NO;
+        [Questions_List addObject:Lefter];
+        
+        Question_Class *Mille=[[Question_Class alloc]init];
+        Mille.Question=@"Which Manager Led Besiktas to Three Back to Back Leauge Championships?";
+        Mille.Correct_Answer=@"Gordon Milne";
+        Mille.Wrong_Answer_1=@"Daum";
+        Mille.Wrong_Answer_2=@"DelBosque";
+        Mille.Wrong_Answer_3=@"Rasim Kara";
+        Mille.picture=NO;
+        [Questions_List addObject:Mille];
+        
+        Question_Class *Fatih=[[Question_Class alloc]init];
+        Fatih.Question=@"What Was the First Italian Team Fatih Terim Managed?";
+        Fatih.Correct_Answer=@"Fiorentina";
+        Fatih.Wrong_Answer_1=@"A.C. Milan";
+        Fatih.Wrong_Answer_2=@"Inter Milan";
+        Fatih.Wrong_Answer_3=@"Juventus";
+        Fatih.picture=NO;
+        [Questions_List addObject:Fatih];
+        
+        Question_Class *Trabzon=[[Question_Class alloc]init];
+        Trabzon.Question=@"Which Season Did Trabzonspor Win Their First Championship?";
+        Trabzon.Correct_Answer=@"1975–76";
+        Trabzon.Wrong_Answer_1=@"1976-1977";
+        Trabzon.Wrong_Answer_2=@"1984-1985";
+        Trabzon.Wrong_Answer_3=@"1970-1971";
+        Trabzon.picture=NO;
+        [Questions_List addObject:Trabzon];
+        
+        Question_Class *Rezilik=[[Question_Class alloc]init];
+        Rezilik.Question=@"Despite Qualifiying Which World Cup Did Turkey Miss Because They Couldn't Afford To Go?";
+        Rezilik.Correct_Answer=@"1950";
+        Rezilik.Wrong_Answer_1=@"1954";
+        Rezilik.Wrong_Answer_2=@"1994";
+        Rezilik.Wrong_Answer_3=@"1978";
+        Rezilik.picture=NO;
+        [Questions_List addObject:Rezilik];
+        
+        Question_Class *Bursa=[[Question_Class alloc]init];
+        Bursa.Question=@"What Is The Name Of Bursaspor Ultras?";
+        Bursa.Correct_Answer=@"Texas";
+        Bursa.Wrong_Answer_1=@"Cowboys";
+        Bursa.Wrong_Answer_2=@"Indians";
+        Bursa.Wrong_Answer_3=@"Crocodiles";
+        Bursa.picture=NO;
+        [Questions_List addObject:Bursa];
+        
+        
+        Question_Class *Bursaspor=[[Question_Class alloc]init];
+        Bursaspor.Question=@"Which Year Did Bursaspor Win The Super League?";
+        Bursaspor.Correct_Answer=@"2010";
+        Bursaspor.Wrong_Answer_1=@"2011";
+        Bursaspor.Wrong_Answer_2=@"2009";
+        Bursaspor.Wrong_Answer_3=@"2012";
+        Bursaspor.picture=NO;
+        [Questions_List addObject:Bursaspor];
+        
+        Question_Class *Istanbul_Lig=[[Question_Class alloc]init];
+        Istanbul_Lig.Question=@"What Was The Name Of The First Football Pitch In Turkey?";
+        Istanbul_Lig.Correct_Answer=@"Papazın Çayırı";
+        Istanbul_Lig.Wrong_Answer_1=@"Seyrantepe";
+        Istanbul_Lig.Wrong_Answer_2=@"Geniş Alan";
+        Istanbul_Lig.Wrong_Answer_3=@"Aslantepe";
+        Istanbul_Lig.picture=NO;
+        [Questions_List addObject:Istanbul_Lig];
+        
+        Question_Class *Constantinople=[[Question_Class alloc]init];
+        Constantinople.Question=@"What Was The Name Of The First Football Club In Istanbul?";
+        Constantinople.Correct_Answer=@"Cadi-KeuyF.C.";
+        Constantinople.Wrong_Answer_1=@"ModaF.C.";
+        Constantinople.Wrong_Answer_2=@"ImogeneF.C.";
+        Constantinople.Wrong_Answer_3=@"Union Club";
+        Constantinople.picture=NO;
+        [Questions_List addObject:Constantinople];
+        
+        Question_Class *Wasted_Talent=[[Question_Class alloc]init];
+        Wasted_Talent.Question=@"Who Was The First Turkish Player To Play At All Big 4 Teams?";
+        Wasted_Talent.Correct_Answer=@"Sergen Yalçın";
+        Wasted_Talent.Wrong_Answer_1=@"Tanju Colak";
+        Wasted_Talent.Wrong_Answer_2=@"Burak Yılmaz";
+        Wasted_Talent.Wrong_Answer_3=@"Volkan Şen";
+        Wasted_Talent.picture=NO;
+        [Questions_List addObject:Wasted_Talent];
+        
+        Question_Class *akhisar=[[Question_Class alloc]init];
+        akhisar.Question=@"What Is Akhisar Belediyespor Famous Nickname?";
+        akhisar.Correct_Answer=@"Akigo";
+        akhisar.Wrong_Answer_1=@"Yiğidolar";
+        akhisar.Wrong_Answer_2=@"Anadolu Yıldızı";
+        akhisar.Wrong_Answer_3=@"Şahinler";
+        akhisar.picture=NO;
+        [Questions_List addObject:akhisar];
+        
+        Question_Class *Gheorghe_Hagi=[[Question_Class alloc]init];
+        Gheorghe_Hagi.Question=@"How Old Was Gheorghe Hagi When He Arrived At Galatasaray?";
+        Gheorghe_Hagi.Correct_Answer=@"31";
+        Gheorghe_Hagi.Wrong_Answer_1=@"35";
+        Gheorghe_Hagi.Wrong_Answer_2=@"29";
+        Gheorghe_Hagi.Wrong_Answer_3=@"32";
+        Gheorghe_Hagi.picture=NO;
+        [Questions_List addObject:Gheorghe_Hagi];
+        
+        Question_Class *Tuncay=[[Question_Class alloc]init];
+        Tuncay.Question=@"What Team Did Tuncay Şanlı Join After Fenerbahce?";
+        Tuncay.Correct_Answer=@"Middlesbrough";
+        Tuncay.Wrong_Answer_1=@"Stoke City";
+        Tuncay.Wrong_Answer_2=@"Herta Berlin";
+        Tuncay.Wrong_Answer_3=@"Millwall FC";
+        Tuncay.picture=NO;
+        [Questions_List addObject:Tuncay];
+        
+        Question_Class *Graeme =[[Question_Class alloc]init];
+        Graeme.Question=@"Which GS Manager Is This?";
+        Graeme.Correct_Answer=@"Souness";
+        Graeme.Wrong_Answer_1=@"Lucescu";
+        Graeme.Wrong_Answer_2=@"Saftig";
+        Graeme.Wrong_Answer_3=@"Held";
+        Graeme.picture=YES;
+        Graeme.picture_location=@"Koydukmu";
+        [Questions_List addObject:Graeme];
+        
+        Question_Class *Izmir_cook=[[Question_Class alloc]init];
+        Izmir_cook.Question=@"The Famous Izmir Derby Is Between Karşıyaka S.K. and What Team?";
+        Izmir_cook.Correct_Answer=@"GöztepeS.K.";
+        Izmir_cook.Wrong_Answer_1=@"Altay";
+        Izmir_cook.Wrong_Answer_2=@"AltınorduF.K.";
+        Izmir_cook.Wrong_Answer_3=@"Bucaspor";
+        Izmir_cook.picture=NO;
+        [Questions_List addObject:Izmir_cook];
+        
+        
+        Question_Class *Hasan_Sas =[[Question_Class alloc]init];
+        Hasan_Sas.Question=@"2002 World Cup Squad Player";
+        Hasan_Sas.Correct_Answer=@"Hasan Şaş";
+        Hasan_Sas.Wrong_Answer_1=@"Emre Aşık";
+        Hasan_Sas.Wrong_Answer_2=@"Nihat Kahveci";
+        Hasan_Sas.Wrong_Answer_3=@"Ergün Penbe";
+        Hasan_Sas.picture=YES;
+        Hasan_Sas.picture_location=@"Hasan_Sas";
+        [Questions_List addObject:Hasan_Sas];
+        
+        Question_Class *Denizli=[[Question_Class alloc]init];
+        Denizli.Question=@"Which Manager Became Champions With All Big 3 Istanbul Teams?";
+        Denizli.Correct_Answer=@"Denzili";
+        Denizli.Wrong_Answer_1=@"Terim";
+        Denizli.Wrong_Answer_2=@"Güneş";
+        Denizli.Wrong_Answer_3=@"Hamzaoğlu";
+        Denizli.picture=NO;
+        [Questions_List addObject:Denizli];
+        
+        Question_Class *Alex_D=[[Question_Class alloc]init];
+        Alex_D.Question=@"How Many League Goals Did Alexsandro de Souza Score?";
+        Alex_D.Correct_Answer=@"136";
+        Alex_D.Wrong_Answer_1=@"144";
+        Alex_D.Wrong_Answer_2=@"87";
+        Alex_D.Wrong_Answer_3=@"208";
+        Alex_D.picture=NO;
+        [Questions_List addObject:Alex_D];
+        
+        Question_Class *Arda=[[Question_Class alloc]init];
+        Arda.Question=@"What Was Arda Turans Total Transfer Fee To ATLÉTICO?";
+        Arda.Correct_Answer=@"15,50 Mill.€";
+        Arda.Wrong_Answer_1=@"5,50 Mill.€";
+        Arda.Wrong_Answer_2=@"150 Mill. €";
+        Arda.Wrong_Answer_3=@"50 Mill. €";
+        Arda.picture=NO;
+        [Questions_List addObject:Arda];
+        
+        
+        Question_Class *World_Cup=[[Question_Class alloc]init];
+        World_Cup.Question=@"Which Team Ended Turkey's 2002 World Cup Run?";
+        World_Cup.Correct_Answer=@"Brazil";
+        World_Cup.Wrong_Answer_1=@"Italy";
+        World_Cup.Wrong_Answer_2=@"Greece";
+        World_Cup.Wrong_Answer_3=@"South Korea";
+        World_Cup.picture=NO;
+        [Questions_List addObject:World_Cup];
+        
+        Question_Class *Altin=[[Question_Class alloc]init];
+        Altin.Question=@"Which Team Is This?";
+        Altin.Correct_Answer=@"Altinordu";
+        Altin.Wrong_Answer_1=@"Altay";
+        Altin.Wrong_Answer_2=@"Antepspor";
+        Altin.Wrong_Answer_3=@"Aliağaspor";
+        Altin.picture=YES;
+        Altin.picture_location=@"Altinordu";
+        [Questions_List addObject:Altin];
+        
+        Question_Class *Siktir_spor=[[Question_Class alloc]init];
+        Siktir_spor.Question=@"This Team Have Been Runners Up 3 Times But Have Never Won The League";
+        Siktir_spor.Correct_Answer=@"Eskişehirspor";
+        Siktir_spor.Wrong_Answer_1=@"Adanaspor";
+        Siktir_spor.Wrong_Answer_2=@"Samsunspor";
+        Siktir_spor.Wrong_Answer_3=@"Elazığspor";
+        Siktir_spor.picture=NO;
+        
+        [Questions_List addObject:Siktir_spor];
+        
+        Question_Class *Carsi=[[Question_Class alloc]init];
+        Carsi.Question=@"These Ultras Support";
+        Carsi.Correct_Answer=@"Beşiktaş";
+        Carsi.Wrong_Answer_1=@"Fenerbahçe";
+        Carsi.Wrong_Answer_2=@"Gaziantepspor";
+        Carsi.Wrong_Answer_3=@"Sivasspor";
+        Carsi.picture=YES;
+        Carsi.picture_location=@"Gazi";
+        [Questions_List addObject:Carsi];
+        
+        
+        Question_Class *Wunderbar=[[Question_Class alloc]init];
+        Wunderbar.Question=@"Which Team Does NOT Have A Volleyball In Their Club Crest?";
+        Wunderbar.Correct_Answer=@"Osmanlispor";
+        Wunderbar.Wrong_Answer_1=@"Gençlerbirliği";
+        Wunderbar.Wrong_Answer_2=@"Eskişehirspor";
+        Wunderbar.Wrong_Answer_3=@"Trabzonspor";
+        Wunderbar.picture=NO;
+        [Questions_List addObject:Wunderbar];
+        
+        
+        
+        Question_Class *Gaziantepli=[[Question_Class alloc]init];
+        Gaziantepli.Question=@"These Are The Colors Of";
+        Gaziantepli.Correct_Answer=@"Gaziantepspor";
+        Gaziantepli.Wrong_Answer_1=@"Kayserispor";
+        Gaziantepli.Wrong_Answer_2=@"Konyaspor";
+        Gaziantepli.Wrong_Answer_3=@"Sivasspor";
+        Gaziantepli.picture=YES;
+        Gaziantepli.picture_location=@"fistik_yedik";
+        [Questions_List addObject:Gaziantepli];
+        
+        
+        Question_Class *Mersin=[[Question_Class alloc]init];
+        Mersin.Question=@"Which Cities Football Squad Is Called The Red Devils?";
+        Mersin.Correct_Answer=@"Mersin";
+        Mersin.Wrong_Answer_1=@"Kayseri";
+        Mersin.Wrong_Answer_2=@"Konya";
+        Mersin.Wrong_Answer_3=@"Trabzonspor";
+        Mersin.picture=NO;
+        [Questions_List addObject:Mersin];
+        
+        Question_Class *Altay=[[Question_Class alloc]init];
+        Altay.Question=@"Until The 2016 Season Which One Of These Teams Had The Same # of League Appearances As Trabzonspor?";
+        Altay.Correct_Answer=@"Altay";
+        Altay.Wrong_Answer_1=@"Adanaspor";
+        Altay.Wrong_Answer_2=@"Vefa";
+        Altay.Wrong_Answer_3=@"Konyaspor";
+        Altay.picture=NO;
+        [Questions_List addObject:Altay];
+        
+        Question_Class *GS=[[Question_Class alloc]init];
+        GS.Question=@"If You Found Yourself At Numbered Stand Screaming Welcome To Hell You Were At Which Stadium?";
+        GS.Correct_Answer=@"Ali Sami Yen";
+        GS.Wrong_Answer_1=@"Inonu";
+        GS.Wrong_Answer_2=@"Aslantepe";
+        GS.Wrong_Answer_3=@"Torku Arena";
+        GS.picture=NO;
+        [Questions_List addObject:GS];
+        
+    }
+    else{
+        
+        Question_Class *Super_Lig96=[[Question_Class alloc]init];
+        Super_Lig96.Question=@"Bu Takımlardan Hangisi 1996 Super Lig Şampiyonu Oldu?";
+        Super_Lig96.Correct_Answer=@"Galatasaray";
+        Super_Lig96.Wrong_Answer_1=@"Besiktas";
+        Super_Lig96.Wrong_Answer_2=@"Fenerbahce";
+        Super_Lig96.Wrong_Answer_3=@"Trabzonspor";
+        Super_Lig96.picture=NO;
+        [Questions_List addObject:Super_Lig96];
+        
+        
+        
+        Question_Class *All_Time=[[Question_Class alloc]init];
+        All_Time.Question=@"Turk Futbolunun En Golcu Oyuncusu Kim?";
+        All_Time.Correct_Answer=@"Metin Oktay";
+        All_Time.Wrong_Answer_1=@"Tanju Çolak";
+        All_Time.Wrong_Answer_2=@"Hakan Şükür";
+        All_Time.Wrong_Answer_3=@"Alex";
+        All_Time.picture=NO;
+        [Questions_List addObject:All_Time];
+        
+        Question_Class *Lefter=[[Question_Class alloc]init];
+        Lefter.Question=@"Takma Ismi Ordinaryüs Olan ünlu Fener Futbolcusu Kimdir?";
+        Lefter.Correct_Answer=@"Lefter Küçük";
+        Lefter.Wrong_Answer_1=@"Oğuz Çetin";
+        Lefter.Wrong_Answer_2=@"Colin Kazim";
+        Lefter.Wrong_Answer_3=@"Nicolas Anelka";
+        Lefter.picture=NO;
+        [Questions_List addObject:Lefter];
+        
+        Question_Class *Mille=[[Question_Class alloc]init];
+        Mille.Question=@"Beşiktaşı Üst Üste 3 Defa Lig Şampiyonlugunu Tattıran Teknik Direktör Kimdir?";
+        Mille.Correct_Answer=@"Gordon Milne";
+        Mille.Wrong_Answer_1=@"Daum";
+        Mille.Wrong_Answer_2=@"DelBosque";
+        Mille.Wrong_Answer_3=@"Rasim Kara";
+        Mille.picture=NO;
+        [Questions_List addObject:Mille];
+        
+        Question_Class *Fatih=[[Question_Class alloc]init];
+        Fatih.Question=@"Fatih Terimin Yonetiği Ilk Italyan Takımını İsmi Neydi?";
+        Fatih.Correct_Answer=@"Fiorentina";
+        Fatih.Wrong_Answer_1=@"A.C. Milan";
+        Fatih.Wrong_Answer_2=@"Inter Milan";
+        Fatih.Wrong_Answer_3=@"Juventus";
+        Fatih.picture=NO;
+        [Questions_List addObject:Fatih];
+        
+        Question_Class *Trabzon=[[Question_Class alloc]init];
+        Trabzon.Question=@"Trabzonsporun Ilk Şampiyon Olduğu Sezon Kaçtı?";
+        Trabzon.Correct_Answer=@"1975–76";
+        Trabzon.Wrong_Answer_1=@"1976-1977";
+        Trabzon.Wrong_Answer_2=@"1984-1985";
+        Trabzon.Wrong_Answer_3=@"1970-1971";
+        Trabzon.picture=NO;
+        [Questions_List addObject:Trabzon];
+        
+        Question_Class *Rezilik=[[Question_Class alloc]init];
+        Rezilik.Question=@"Elemeleri Gectiği Ama Maddi Nedenlerden Dolayı Katilamadığımız Dünya Kupası Hangi Senede Oynandi?";
+        Rezilik.Correct_Answer=@"1950";
+        Rezilik.Wrong_Answer_1=@"1954";
+        Rezilik.Wrong_Answer_2=@"1994";
+        Rezilik.Wrong_Answer_3=@"1978";
+        Rezilik.picture=NO;
+        [Questions_List addObject:Rezilik];
+        
+        Question_Class *Bursa=[[Question_Class alloc]init];
+        Bursa.Question=@"Bursa Sporun Ünlü Amigo Grubun Ismi Ne?";
+        Bursa.Correct_Answer=@"Texas";
+        Bursa.Wrong_Answer_1=@"Cowboys";
+        Bursa.Wrong_Answer_2=@"Indians";
+        Bursa.Wrong_Answer_3=@"Crocodiles";
+        Bursa.picture=NO;
+        [Questions_List addObject:Bursa];
+        
+        
+        Question_Class *Bursaspor=[[Question_Class alloc]init];
+        Bursaspor.Question=@"Bursa Sporun Şampiyonluğu Hangi Sezondu?";
+        Bursaspor.Correct_Answer=@"2010";
+        Bursaspor.Wrong_Answer_1=@"2011";
+        Bursaspor.Wrong_Answer_2=@"2009";
+        Bursaspor.Wrong_Answer_3=@"2012";
+        Bursaspor.picture=NO;
+        [Questions_List addObject:Bursaspor];
+        
+        Question_Class *Istanbul_Lig=[[Question_Class alloc]init];
+        Istanbul_Lig.Question=@"Turkiyenin Ilk Futbol Sahasının Ismi Nedir?";
+        Istanbul_Lig.Correct_Answer=@"Papazın Çayırı";
+        Istanbul_Lig.Wrong_Answer_1=@"Seyrantepe";
+        Istanbul_Lig.Wrong_Answer_2=@"Geniş Alan";
+        Istanbul_Lig.Wrong_Answer_3=@"Aslantepe";
+        Istanbul_Lig.picture=NO;
+        [Questions_List addObject:Istanbul_Lig];
+        
+        Question_Class *Constantinople=[[Question_Class alloc]init];
+        Constantinople.Question=@"Istanbulda Kurulan İlk Futbol Takımı Hangisidir?";
+        Constantinople.Correct_Answer=@"Cadi-KeuyF.C.";
+        Constantinople.Wrong_Answer_1=@"ModaF.C.";
+        Constantinople.Wrong_Answer_2=@"ImogeneF.C.";
+        Constantinople.Wrong_Answer_3=@"Union Club";
+        Constantinople.picture=NO;
+        [Questions_List addObject:Constantinople];
+        
+        Question_Class *Wasted_Talent=[[Question_Class alloc]init];
+        Wasted_Talent.Question=@"4 Büyük Takımlarda Oynuyan Ilk Futbolcu Kimdir?";
+        Wasted_Talent.Correct_Answer=@"Sergen Yalçın";
+        Wasted_Talent.Wrong_Answer_1=@"Tanju Colak";
+        Wasted_Talent.Wrong_Answer_2=@"Burak Yılmaz";
+        Wasted_Talent.Wrong_Answer_3=@"Volkan Şen";
+        Wasted_Talent.picture=NO;
+        [Questions_List addObject:Wasted_Talent];
+        
+        Question_Class *akhisar=[[Question_Class alloc]init];
+        akhisar.Question=@"Akhisar Belediyesporun Ünlü Takma Ismi Nedir?";
+        akhisar.Correct_Answer=@"Akigo";
+        akhisar.Wrong_Answer_1=@"Yiğidolar";
+        akhisar.Wrong_Answer_2=@"Anadolu Yıldızı";
+        akhisar.Wrong_Answer_3=@"Şahinler";
+        akhisar.picture=NO;
+        [Questions_List addObject:akhisar];
+        
+        Question_Class *Gheorghe_Hagi=[[Question_Class alloc]init];
+        Gheorghe_Hagi.Question=@"Galatasaray'a Transfer Oldugunda Gheorghe Hagi Kaç Yaşindaydı?";
+        Gheorghe_Hagi.Correct_Answer=@"31";
+        Gheorghe_Hagi.Wrong_Answer_1=@"35";
+        Gheorghe_Hagi.Wrong_Answer_2=@"29";
+        Gheorghe_Hagi.Wrong_Answer_3=@"32";
+        Gheorghe_Hagi.picture=NO;
+        [Questions_List addObject:Gheorghe_Hagi];
+        
+        Question_Class *Tuncay=[[Question_Class alloc]init];
+        Tuncay.Question=@"Fenerbahceden Sonra Tuncay Şanlı Hangi Takıma Transfer Oldu?";
+        Tuncay.Correct_Answer=@"Middlesbrough";
+        Tuncay.Wrong_Answer_1=@"Stoke City";
+        Tuncay.Wrong_Answer_2=@"Herta Berlin";
+        Tuncay.Wrong_Answer_3=@"Millwall FC";
+        Tuncay.picture=NO;
+        [Questions_List addObject:Tuncay];
+        
+        Question_Class *Graeme =[[Question_Class alloc]init];
+        Graeme.Question=@"GS Ünlü Teknik Direktöru";
+        Graeme.Correct_Answer=@"Souness";
+        Graeme.Wrong_Answer_1=@"Lucescu";
+        Graeme.Wrong_Answer_2=@"Saftig";
+        Graeme.Wrong_Answer_3=@"Held";
+        Graeme.picture=YES;
+        Graeme.picture_location=@"Koydukmu";
+        [Questions_List addObject:Graeme];
+        
+        Question_Class *Izmir_cook=[[Question_Class alloc]init];
+        Izmir_cook.Question=@"Büyük Izmir Derbisi Karşıyaka S.K. ve Hangi Takımın Arasında Oynanıyor?";
+        Izmir_cook.Correct_Answer=@"GöztepeS.K.";
+        Izmir_cook.Wrong_Answer_1=@"Altay";
+        Izmir_cook.Wrong_Answer_2=@"AltınorduF.K.";
+        Izmir_cook.Wrong_Answer_3=@"Bucaspor";
+        Izmir_cook.picture=NO;
+        [Questions_List addObject:Izmir_cook];
+        
+        
+        Question_Class *Hasan_Sas =[[Question_Class alloc]init];
+        Hasan_Sas.Question=@"2002 Dunya Kupasi Kadrosu";
+        Hasan_Sas.Correct_Answer=@"Hasan Şaş";
+        Hasan_Sas.Wrong_Answer_1=@"Emre Aşık";
+        Hasan_Sas.Wrong_Answer_2=@"Nihat Kahveci";
+        Hasan_Sas.Wrong_Answer_3=@"Ergün Penbe";
+        Hasan_Sas.picture=YES;
+        Hasan_Sas.picture_location=@"Hasan_Sas";
+        [Questions_List addObject:Hasan_Sas];
+        
+        Question_Class *Denizli=[[Question_Class alloc]init];
+        Denizli.Question=@" 3 Büyük Istanbul Takımlarıyla Şampiyon Olan Teknik Direktor Kimdir?";
+        Denizli.Correct_Answer=@"Denzili";
+        Denizli.Wrong_Answer_1=@"Terim";
+        Denizli.Wrong_Answer_2=@"Güneş";
+        Denizli.Wrong_Answer_3=@"Hamzaoğlu";
+        Denizli.picture=NO;
+        [Questions_List addObject:Denizli];
+        
+        Question_Class *Alex_D=[[Question_Class alloc]init];
+        Alex_D.Question=@" Alexsandro de Souza Super Lig Kariyerinde Kac Gol Attı?";
+        Alex_D.Correct_Answer=@"136";
+        Alex_D.Wrong_Answer_1=@"144";
+        Alex_D.Wrong_Answer_2=@"87";
+        Alex_D.Wrong_Answer_3=@"208";
+        Alex_D.picture=NO;
+        [Questions_List addObject:Alex_D];
+        
+        Question_Class *Arda=[[Question_Class alloc]init];
+        Arda.Question=@"ATLÉTICO Arda Turan Transferi Için Ne Kadar Odedi?";
+        Arda.Correct_Answer=@"15,50 Mill.€";
+        Arda.Wrong_Answer_1=@"5,50 Mill.€";
+        Arda.Wrong_Answer_2=@"150 Mill. €";
+        Arda.Wrong_Answer_3=@"50 Mill. €";
+        Arda.picture=NO;
+        [Questions_List addObject:Arda];
+        
+        
+        Question_Class *World_Cup=[[Question_Class alloc]init];
+        World_Cup.Question=@"2002 Dunya Kupasinda Turkiye Hangi Ülke Tarafindan Elendi?";
+        World_Cup.Correct_Answer=@"Brezilya";
+        World_Cup.Wrong_Answer_1=@"Italya";
+        World_Cup.Wrong_Answer_2=@"Yunanistan";
+        World_Cup.Wrong_Answer_3=@"Güney Kore";
+        World_Cup.picture=NO;
+        [Questions_List addObject:World_Cup];
+        
+        Question_Class *Altin=[[Question_Class alloc]init];
+        Altin.Question=@"Bu Takımın Ismi?";
+        Altin.Correct_Answer=@"Altinordu";
+        Altin.Wrong_Answer_1=@"Altay";
+        Altin.Wrong_Answer_2=@"Antepspor";
+        Altin.Wrong_Answer_3=@"Aliağaspor";
+        Altin.picture=YES;
+        Altin.picture_location=@"Altinordu";
+        [Questions_List addObject:Altin];
+        
+        Question_Class *Siktir_spor=[[Question_Class alloc]init];
+        Siktir_spor.Question=@"3 Sefer Lig Ikincisi Olan Ama Lig Şampiyonu Olamayan Takım Hangisidir?";
+        Siktir_spor.Correct_Answer=@"Eskişehirspor";
+        Siktir_spor.Wrong_Answer_1=@"Adanaspor";
+        Siktir_spor.Wrong_Answer_2=@"Samsunspor";
+        Siktir_spor.Wrong_Answer_3=@"Elazığspor";
+        Siktir_spor.picture=NO;
+        
+        [Questions_List addObject:Siktir_spor];
+        
+        Question_Class *Carsi=[[Question_Class alloc]init];
+        Carsi.Question=@"Bu Ultural Hangi Kulüp Destekliyorlar?";
+        Carsi.Correct_Answer=@"Beşiktaş";
+        Carsi.Wrong_Answer_1=@"Fenerbahçe";
+        Carsi.Wrong_Answer_2=@"Gaziantepspor";
+        Carsi.Wrong_Answer_3=@"Sivasspor";
+        Carsi.picture=YES;
+        Carsi.picture_location=@"Gazi";
+        [Questions_List addObject:Carsi];
+        
+        
+        Question_Class *Wunderbar=[[Question_Class alloc]init];
+        Wunderbar.Question=@"Hangi Kulübün Armasinda Voleybol Topu Yoktur?";
+        Wunderbar.Correct_Answer=@"Osmanlispor";
+        Wunderbar.Wrong_Answer_1=@"Gençlerbirliği";
+        Wunderbar.Wrong_Answer_2=@"Eskişehirspor";
+        Wunderbar.Wrong_Answer_3=@"Trabzonspor";
+        Wunderbar.picture=NO;
+        [Questions_List addObject:Wunderbar];
+        
+        
+        
+        Question_Class *Gaziantepli=[[Question_Class alloc]init];
+        Gaziantepli.Question=@"Bu Renkler Hangi Kulübe Aittir?";
+        Gaziantepli.Correct_Answer=@"Gaziantepspor";
+        Gaziantepli.Wrong_Answer_1=@"Kayserispor";
+        Gaziantepli.Wrong_Answer_2=@"Konyaspor";
+        Gaziantepli.Wrong_Answer_3=@"Sivasspor";
+        Gaziantepli.picture=YES;
+        Gaziantepli.picture_location=@"fistik_yedik";
+        [Questions_List addObject:Gaziantepli];
+        
+        
+        Question_Class *Mersin=[[Question_Class alloc]init];
+        Mersin.Question=@"Hangi Şehrin Futbol Takımı Kirmizi Şeytanlar Olarak Geciyor?";
+        Mersin.Correct_Answer=@"Mersin";
+        Mersin.Wrong_Answer_1=@"Kayseri";
+        Mersin.Wrong_Answer_2=@"Konya";
+        Mersin.Wrong_Answer_3=@"Trabzonspor";
+        Mersin.picture=NO;
+        [Questions_List addObject:Mersin];
+        
+        Question_Class *Altay=[[Question_Class alloc]init];
+        Altay.Question=@"2016 Sezonuna Kadar Trabzonspordan Daha Çok Lig Maç Oynamış Takım Hangisidir?";
+        Altay.Correct_Answer=@"Altay";
+        Altay.Wrong_Answer_1=@"Adanaspor";
+        Altay.Wrong_Answer_2=@"Vefa";
+        Altay.Wrong_Answer_3=@"Konyaspor";
+        Altay.picture=NO;
+        [Questions_List addObject:Altay];
+        
+        Question_Class *GS=[[Question_Class alloc]init];
+        GS.Question=@"Numarali Açık'da Otururken Welcome To Hell Bağıran Taraftar Hangi Stad'da Bulunyordu?";
+        GS.Correct_Answer=@"Ali Sami Yen";
+        GS.Wrong_Answer_1=@"Inonu";
+        GS.Wrong_Answer_2=@"Aslantepe";
+        GS.Wrong_Answer_3=@"Torku Arena";
+        GS.picture=NO;
+        [Questions_List addObject:GS];
+        
+        
+        
+    }
     
     
     for (int x=0; x<Questions_List.count; x++) {
@@ -466,6 +760,7 @@
 -(void)nextquestion{
    
     if (self.j== Questions_List.count) {
+        
       //if all quetions have been answered then end the game
         NSString *strValue = @(self.m).stringValue;
         NSMutableString *string1 = [NSMutableString stringWithString: @"You got "];

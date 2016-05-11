@@ -7,6 +7,7 @@
 //
 
 #import "WelcomeViewController.h"
+#import "QuestionScreenViewController.h"
 
 @interface WelcomeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *Welcome_Image;
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.language_options=[[NSArray alloc]initWithObjects:@"Turkish",@"English", nil];
+    self.language_options=[[NSArray alloc]initWithObjects:@"English",@"Turkish", nil];
     UIPickerView *language_selection=[[UIPickerView alloc]init];
     language_selection.delegate=self;
     language_selection.dataSource=self;
@@ -51,14 +52,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    QuestionScreenViewController *question=[segue destinationViewController];
+    [question setLanguage:self.Text_Container.text];
 }
-*/
+
 
 @end
