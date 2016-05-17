@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521E02911CE4235A00449414 /* FinalScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521E02901CE4235A00449414 /* FinalScreenViewController.m */; };
 		5226C1F41CDFCDBC0086C33F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226C1F31CDFCDBC0086C33F /* WelcomeViewController.m */; };
 		52B8EEFC1CCD8557005ECF03 /* Question_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8EEFB1CCD8557005ECF03 /* Question_Class.m */; };
 		52D4821A1CCD4F8C00E635C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D482191CCD4F8C00E635C4 /* main.m */; };
 		52D4821D1CCD4F8C00E635C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D4821C1CCD4F8C00E635C4 /* AppDelegate.m */; };
-		52D482201CCD4F8D00E635C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D4821F1CCD4F8D00E635C4 /* ViewController.m */; };
 		52D482231CCD4F8D00E635C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D482211CCD4F8D00E635C4 /* Main.storyboard */; };
 		52D482261CCD4F8D00E635C4 /* Turkish_Soccer_Trivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52D482241CCD4F8D00E635C4 /* Turkish_Soccer_Trivia.xcdatamodeld */; };
 		52D482281CCD4F8E00E635C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D482271CCD4F8E00E635C4 /* Assets.xcassets */; };
@@ -20,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		521E028F1CE4235A00449414 /* FinalScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalScreenViewController.h; sourceTree = "<group>"; };
+		521E02901CE4235A00449414 /* FinalScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalScreenViewController.m; sourceTree = "<group>"; };
 		5226C1F21CDFCDBC0086C33F /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		5226C1F31CDFCDBC0086C33F /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		52B8EEFA1CCD8557005ECF03 /* Question_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question_Class.h; sourceTree = "<group>"; };
@@ -28,8 +30,6 @@
 		52D482191CCD4F8C00E635C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52D4821B1CCD4F8C00E635C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52D4821C1CCD4F8C00E635C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		52D4821E1CCD4F8C00E635C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		52D4821F1CCD4F8D00E635C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		52D482251CCD4F8D00E635C4 /* Turkish_Soccer_Trivia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Turkish_Soccer_Trivia.xcdatamodel; sourceTree = "<group>"; };
 		52D482271CCD4F8E00E635C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52D4822A1CCD4F8E00E635C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,9 +71,9 @@
 			children = (
 				52D4821B1CCD4F8C00E635C4 /* AppDelegate.h */,
 				52D4821C1CCD4F8C00E635C4 /* AppDelegate.m */,
-				52D4821E1CCD4F8C00E635C4 /* ViewController.h */,
-				52D4821F1CCD4F8D00E635C4 /* ViewController.m */,
 				52D482211CCD4F8D00E635C4 /* Main.storyboard */,
+				521E028F1CE4235A00449414 /* FinalScreenViewController.h */,
+				521E02901CE4235A00449414 /* FinalScreenViewController.m */,
 				5226C1F21CDFCDBC0086C33F /* WelcomeViewController.h */,
 				5226C1F31CDFCDBC0086C33F /* WelcomeViewController.m */,
 				52D482321CCD520E00E635C4 /* QuestionScreenViewController.h */,
@@ -128,6 +128,7 @@
 				TargetAttributes = {
 					52D482141CCD4F8C00E635C4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = VYU5JKTB5J;
 					};
 				};
 			};
@@ -168,8 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52B8EEFC1CCD8557005ECF03 /* Question_Class.m in Sources */,
+				521E02911CE4235A00449414 /* FinalScreenViewController.m in Sources */,
 				52D482261CCD4F8D00E635C4 /* Turkish_Soccer_Trivia.xcdatamodeld in Sources */,
-				52D482201CCD4F8D00E635C4 /* ViewController.m in Sources */,
 				52D482341CCD520E00E635C4 /* QuestionScreenViewController.m in Sources */,
 				52D4821D1CCD4F8C00E635C4 /* AppDelegate.m in Sources */,
 				5226C1F41CDFCDBC0086C33F /* WelcomeViewController.m in Sources */,
@@ -285,7 +286,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Turkish Soccer Trivia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sebat-Tech-LLC.Turkish-Soccer-Trivia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,7 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Turkish Soccer Trivia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sebat-Tech-LLC.Turkish-Soccer-Trivia";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,6 +10,7 @@
 #import "Question_Class.h"
 @import UIKit;
 #import <QuartzCore/QuartzCore.h>
+#import "FinalScreenViewController.h"
 
 @interface QuestionScreenViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *Button_1;
@@ -49,7 +50,7 @@
     
     //Initilizing Question Objects
     if ([self.language isEqual:@"English"]) {
-        Question_Class *Super_Lig96=[[Question_Class alloc]init];
+       Question_Class *Super_Lig96=[[Question_Class alloc]init];
         Super_Lig96.Question=@"Which Team Won the Super Lig in 1996?";
         Super_Lig96.Correct_Answer=@"Galatasaray";
         Super_Lig96.Wrong_Answer_1=@"Besiktas";
@@ -58,7 +59,7 @@
         Super_Lig96.picture=NO;
         [Questions_List addObject:Super_Lig96];
         
-        
+   
         
         Question_Class *All_Time=[[Question_Class alloc]init];
         All_Time.Question=@"Who Is the All Time Top Goal Scorer in Turkish Football?";
@@ -225,7 +226,7 @@
         Denizli.Wrong_Answer_3=@"Hamzaoğlu";
         Denizli.picture=NO;
         [Questions_List addObject:Denizli];
-        
+     
         Question_Class *Alex_D=[[Question_Class alloc]init];
         Alex_D.Question=@"How Many League Goals Did Alexsandro de Souza Score?";
         Alex_D.Correct_Answer=@"136";
@@ -305,7 +306,7 @@
         Gaziantepli.picture=YES;
         Gaziantepli.picture_location=@"fistik_yedik";
         [Questions_List addObject:Gaziantepli];
-        
+       
         
         Question_Class *Mersin=[[Question_Class alloc]init];
         Mersin.Question=@"Which Cities Football Squad Is Called The Red Devils?";
@@ -649,6 +650,10 @@
 
     
     self.Questions.selectable = NO;
+    
+    
+    
+    
    
     [self selectinit];
         
@@ -659,6 +664,10 @@
     
     
     
+}
+
+-(void)buttonizeButtonTap:(id)sender{
+    [self performSegueWithIdentifier:@"Manual" sender:sender];
 }
 -(void)selectinit{
     
@@ -761,38 +770,7 @@
    
     if (self.j== Questions_List.count) {
         
-      //if all quetions have been answered then end the game
-        NSString *strValue = @(self.m).stringValue;
-        NSMutableString *string1 = [NSMutableString stringWithString: @"You got "];
-        [string1 appendString:strValue];
-        NSString *messaged=@" out of 31 correct !";
-NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
-      //For some reason I had a problem putting the value of m into *strvalue so I had to append *strvalue to another string. But then that string needed appening also causing this mess here
-        UIAlertController * alert=   [UIAlertController
-                                     alertControllerWithTitle:@"Thats The Last Question"
-                                      message:arisefate
-                                     preferredStyle:UIAlertControllerStyleAlert];
-        
-        [self presentViewController:alert animated:YES completion:^{
-            [self viewDidLoad];
-            
-            self.m=0;
-            //call view did load and clear the correct number of questions viewdid load clears question count 
-        }];
-        
-        
-        UIAlertAction* ok = [UIAlertAction
-                             actionWithTitle:@"Try Again"
-                             style:UIAlertActionStyleDefault
-                             handler:^(UIAlertAction * action)
-                             {
-                                 
-                                 [alert dismissViewControllerAnimated:YES completion:nil];
-                                 
-                             }];
-        
-         [alert addAction:ok];
-        
+        [self buttonizeButtonTap:self];
         
     }
     
@@ -894,7 +872,7 @@ NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
         [self.Button_1 setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         
     } completion:^(BOOL finsihed){
-         [NSThread sleepForTimeInterval:5];
+         [NSThread sleepForTimeInterval:3];
         [self.Button_1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         self.nextquestion;
     }];
@@ -907,14 +885,20 @@ NSString * arisefate = [NSString stringWithFormat:@"%@%@", string1, messaged];
 
 
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"Manual"])
+    {
+        FinalScreenViewController *final_countdown=[segue destinationViewController];
+        [final_countdown setLanguage_options_final:self.language];
+        [final_countdown setScore:self.m];
+        
+    }
 }
-*/
+
+
 
 @end
