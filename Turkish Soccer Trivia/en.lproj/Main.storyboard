@@ -259,7 +259,7 @@
             </objects>
             <point key="canvasLocation" x="1646" y="1364"/>
         </scene>
-        <!--Turkish Football Trivia-->
+        <!--Welcome View Controller-->
         <scene sceneID="u9m-ye-T1q">
             <objects>
                 <viewController id="bjt-bW-l3b" customClass="WelcomeViewController" sceneMemberID="viewController">
@@ -328,7 +328,7 @@
                             <constraint firstItem="Fh9-NH-Z5w" firstAttribute="leading" secondItem="XdO-G8-1NO" secondAttribute="leadingMargin" id="x29-oh-DsR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Turkish Football Trivia" id="2aY-nl-xjV"/>
+                    <navigationItem key="navigationItem" id="2aY-nl-xjV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="Text_Container" destination="CrO-v4-UGk" id="mUF-6j-h9W"/>
